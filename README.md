@@ -28,3 +28,19 @@ APP_RESPONSE='console.log("hi");' \
   APP_LISTEN_ADDR='127.0.0.1:9090' \
   ./http-answer-all
 ```
+
+
+## Development
+
+Run it using:
+
+```sh
+go run ./cmd
+```
+
+... or build it using:
+
+
+```sh
+go build -o build/http-answer-all ./cmd
+```
