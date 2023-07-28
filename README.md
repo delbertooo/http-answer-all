@@ -44,3 +44,14 @@ go run ./cmd
 ```sh
 go build -o build/http-answer-all ./cmd
 ```
+
+### Build the docker image
+
+```sh
+docker buildx build \
+  --platform linux/amd64,linux/arm64 \
+  -t delbertooo/http-answer-all:1.0.0 \
+  -t delbertooo/http-answer-all:1.0 \
+  -t delbertooo/http-answer-all:1 \
+  --push .
+```
