@@ -13,4 +13,6 @@ COPY --from=build /app/http-answer-all /usr/local/bin/http-answer-all
 
 USER nobody
 
+EXPOSE 8090/tcp
+
 CMD [ "http-answer-all" ]
